@@ -29,7 +29,7 @@ const Header = ({onCursor, toggleMenu, setToggleMenu}) => {
   }
 
    useEffect(() => {
-     window.localStorage.setItem('theme', currentTheme)
+     localStorage.setItem('theme', currentTheme)
   },[currentTheme])
 
   return (

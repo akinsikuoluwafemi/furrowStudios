@@ -5,7 +5,7 @@ import React, { createContext, useReducer } from 'react';
 // Define GlobalContext
 
 const INITIAL_STATE = {
-    currentTheme: window !== 'undefined' && window.localStorage.getItem('theme') === null ? "dark" : window.localStorage.getItem('theme'),
+    currentTheme: localStorage.getItem('theme') === null ? "dark" : localStorage.getItem('theme'),
     cursorType: false,
     cursorStyles: ['pointer', 'hovered']
 

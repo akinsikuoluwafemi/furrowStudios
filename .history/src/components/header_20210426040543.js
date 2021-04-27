@@ -12,7 +12,7 @@ const Header = ({onCursor, toggleMenu, setToggleMenu}) => {
   const [{ currentTheme }, dispatch] = useContext(GlobalStateContext);
 
   const setToLocalStorage = () => {
-     window.localStorage.setItem("theme", currentTheme)
+     localStorage.setItem("theme", currentTheme)
     
   }
 
@@ -29,7 +29,7 @@ const Header = ({onCursor, toggleMenu, setToggleMenu}) => {
   }
 
    useEffect(() => {
-     window.localStorage.setItem('theme', currentTheme)
+     localStorage.setItem('theme', currentTheme)
   },[currentTheme])
 
   return (
