@@ -69,7 +69,7 @@ const Layout = ({ children }) => {
   
 
   const [state, dispatch] = useContext(GlobalStateContext);
-  const { currentTheme, cursorStyles } = state;
+  const { currentTheme, cursorStyles }
  const onCursor = cursorType => {
   cursorType = (cursorStyles.includes(cursorType) && cursorType) || false;
     dispatch({ type: "CURSOR_TYPE", cursorType: cursorType })
