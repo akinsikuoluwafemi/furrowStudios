@@ -24,14 +24,14 @@ const Header = ({onCursor, toggleMenu, setToggleMenu}) => {
       
     }else {
       dispatch({ type: "TOGGLE_THEME", theme: "dark" })
-      // setToLocalStorage()
+      setToLocalStorage()
     }
 
   }
 
   // use this
   //  useEffect(() => {
-  //    g.localStorage.setItem('theme', currentTheme)
+  //    window.localStorage.setItem('theme', currentTheme)
   // },[currentTheme])
 
 

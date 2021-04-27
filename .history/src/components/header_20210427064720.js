@@ -31,7 +31,7 @@ const Header = ({onCursor, toggleMenu, setToggleMenu}) => {
 
   // use this
   //  useEffect(() => {
-  //    g.localStorage.setItem('theme', currentTheme)
+  //    window.localStorage.setItem('theme', currentTheme)
   // },[currentTheme])
 
 

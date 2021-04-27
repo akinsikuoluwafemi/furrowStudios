@@ -6,8 +6,6 @@ import React, { createContext, useReducer } from 'react';
 
 const INITIAL_STATE = {
     // currentTheme: typeof window !== 'undefined' && window.localStorage.getItem('theme') === null ? "dark" : window.localStorage.getItem('theme'),
-    currentTheme:  "dark",
-
     cursorType: false,
     cursorStyles: ['pointer', 'hovered']
 

@@ -11,7 +11,6 @@ const Header = ({onCursor, toggleMenu, setToggleMenu}) => {
 
   const [{ currentTheme }, dispatch] = useContext(GlobalStateContext);
 
-  // use this
   // const setToLocalStorage = () => {
   //    window.localStorage.setItem("theme", currentTheme)
     
@@ -20,18 +19,18 @@ const Header = ({onCursor, toggleMenu, setToggleMenu}) => {
   const toggleTheme = () => {
     if(currentTheme === "dark"){
       dispatch({ type: "TOGGLE_THEME", theme: "light" })
-      // setToLocalStorage()
+      setToLocalStorage()
       
     }else {
       dispatch({ type: "TOGGLE_THEME", theme: "dark" })
-      // setToLocalStorage()
+      setToLocalStorage()
     }
 
   }
 
   // use this
   //  useEffect(() => {
-  //    g.localStorage.setItem('theme', currentTheme)
+  //    window.localStorage.setItem('theme', currentTheme)
   // },[currentTheme])
 
 

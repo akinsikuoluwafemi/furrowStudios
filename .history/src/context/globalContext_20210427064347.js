@@ -5,12 +5,15 @@ import React, { createContext, useReducer } from 'react';
 // Define GlobalContext
 
 const INITIAL_STATE = {
-    // currentTheme: typeof window !== 'undefined' && window.localStorage.getItem('theme') === null ? "dark" : window.localStorage.getItem('theme'),
-    currentTheme:  "dark",
+  // currentTheme: typeof window !== 'undefined' && window.localStorage.getItem('theme') === null ? "dark" : window.localStorage.getItem('theme'),
+  currentTheme:
+    typeof window !== "undefined" &&
+    window.localStorage.getItem("theme") === null
+      ? "dark"
+      : window.localStorage.getItem("theme"),
 
-    cursorType: false,
-    cursorStyles: ['pointer', 'hovered']
-
+  cursorType: false,
+  cursorStyles: ["pointer", "hovered"],
 }
 
 export const GlobalStateContext = createContext(INITIAL_STATE);
