@@ -5,10 +5,7 @@ export default function useWindowSize(){
          
        const isBrowser = typeof window !== "undefined"
          if(isBrowser){
-             return {
-               width: window.innerWidth,
-               height: window.innerHeight,
-             }
+             
          }
          
     }

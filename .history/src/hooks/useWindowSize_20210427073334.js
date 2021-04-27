@@ -2,15 +2,12 @@ import { useState, useEffect } from 'react';
 
 export default function useWindowSize(){
      function getSize(){
-         
-       const isBrowser = typeof window !== "undefined"
-         if(isBrowser){
-             return {
-               width: window.innerWidth,
-               height: window.innerHeight,
-             }
-         }
-         
+        return {
+          // width: window.innerWidth,
+          // height: window.innerHeight
+          width:  window.innerWidth,
+          height: window.innerHeight
+        }
     }
 
     const [windowSize, setWindowSize] = useState(getSize);
