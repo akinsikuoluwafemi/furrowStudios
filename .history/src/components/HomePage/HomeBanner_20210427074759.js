@@ -110,7 +110,7 @@ export default function HomeBanner({onCursor}) {
                 
           
         </Video>
-        <Canvas height={size.height ? size.height : ''} width={size.width ? size.width : ''} ref={canvas} onMouseEnter={() => onCursor('hovered')} onMouseLeave={onCursor} />
+        <Canvas height={size.height } width={size.width} ref={canvas} onMouseEnter={() => onCursor('hovered')} onMouseLeave={onCursor} />
             <BannerTitle variants={parent} initial="initial" animate="animate">
                 <Headline variants={child}>DIG</Headline>
                 <Headline variants={child}>DEEP</Headline>
