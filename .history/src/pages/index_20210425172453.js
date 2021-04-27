@@ -9,7 +9,7 @@ import { GlobalStateContext} from '../context/globalContext';
 // utils
 
 
-const IndexPage = () => {
+const IndexPage = props => {
   
   const [{cursorStyles}, dispatch] = useContext(GlobalStateContext);
 
