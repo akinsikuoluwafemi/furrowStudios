@@ -19,6 +19,7 @@ const HomeFeatured = ({onCursor}) => {
     
   const [hovered, setHovered] = useState(false);
 
+  const [toggleMenu, setToggleMenu] = useState(false)
 
 
   const animation = useAnimation()

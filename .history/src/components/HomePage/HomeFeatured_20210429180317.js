@@ -19,6 +19,7 @@ const HomeFeatured = ({onCursor}) => {
     
   const [hovered, setHovered] = useState(false);
 
+  const [toggleMenu, setToggleMenu] = useState(false)
 
 
   const animation = useAnimation()
@@ -105,7 +106,8 @@ const HomeFeatured = ({onCursor}) => {
             onMouseEnter={() => onCursor("pointer")}
             onMouseLeave={onCursor}
           >
-            <button>
+            <button
+            >
               <span>All Projects</span>
             </button>
           </Flex>

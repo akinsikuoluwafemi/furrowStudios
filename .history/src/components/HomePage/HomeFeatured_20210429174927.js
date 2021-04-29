@@ -19,8 +19,6 @@ const HomeFeatured = ({onCursor}) => {
     
   const [hovered, setHovered] = useState(false);
 
-
-
   const animation = useAnimation()
   const [featuredRef, inView] = useInView({
     triggerOnce: true,
@@ -35,22 +33,7 @@ const HomeFeatured = ({onCursor}) => {
   
   
   return (
-    <HomeFeaturedSection
-      ref={featuredRef}
-      animate={animation}
-      initial="hidden"
-      variants={{
-        visible: {
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.6, ease: [0.6, 0.05, -0.01, 0.9] },
-        },
-        hidden: {
-          opacity: 0,
-          y: 72,
-        },
-      }}
-    >
+    <HomeFeaturedSection ref={featu}>
       <Container>
         <Link to="/">
           <FeaturedContent
@@ -100,11 +83,7 @@ const HomeFeatured = ({onCursor}) => {
       </Container>
       <Container>
         <FeaturedProjects>
-          <Flex
-            flexEnd
-            onMouseEnter={() => onCursor("pointer")}
-            onMouseLeave={onCursor}
-          >
+          <Flex flexEnd>
             <button>
               <span>All Projects</span>
             </button>

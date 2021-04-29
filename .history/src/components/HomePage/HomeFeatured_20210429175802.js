@@ -19,8 +19,6 @@ const HomeFeatured = ({onCursor}) => {
     
   const [hovered, setHovered] = useState(false);
 
-
-
   const animation = useAnimation()
   const [featuredRef, inView] = useInView({
     triggerOnce: true,
@@ -100,11 +98,7 @@ const HomeFeatured = ({onCursor}) => {
       </Container>
       <Container>
         <FeaturedProjects>
-          <Flex
-            flexEnd
-            onMouseEnter={() => onCursor("pointer")}
-            onMouseLeave={onCursor}
-          >
+          <Flex flexEnd >
             <button>
               <span>All Projects</span>
             </button>

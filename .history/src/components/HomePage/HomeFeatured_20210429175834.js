@@ -19,8 +19,6 @@ const HomeFeatured = ({onCursor}) => {
     
   const [hovered, setHovered] = useState(false);
 
-
-
   const animation = useAnimation()
   const [featuredRef, inView] = useInView({
     triggerOnce: true,
